@@ -1,0 +1,100 @@
+{
+  "products": [
+    {
+      "title": "Mens Casual Shirt",
+      "price": 699,
+      "category": "Men",
+      "description": "Comfortable cotton casual shirt for everyday wear. Soft fabric with a modern slim fit design.",
+      "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=400&fit=crop",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "title": "Elegant Women's Dress",
+      "price": 799,
+      "category": "Women",
+      "description": "Beautiful elegant dress perfect for parties and special occasions. Premium fabric with stylish design.",
+      "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=400&fit=crop"
+    },
+    {
+      "id": 3,
+      "title": "Smartphone XYZ",
+      "price": 19999,
+      "category": "Electronics",
+      "description": "Latest 5G smartphone with OLED display, 128GB storage, and 48MP camera.",
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=400&fit=crop"
+    },
+    {
+      "id": 4,
+      "title": "Wireless Headphones",
+      "price": 2999,
+      "category": "Electronics",
+      "description": "Premium noise-cancelling wireless headphones with 30-hour battery life and deep bass.",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop"
+    },
+    {
+      "id": 5,
+      "title": "Running Shoes",
+      "price": 1599,
+      "category": "Men",
+      "description": "Lightweight running shoes with cushioned sole for maximum comfort during workouts.",
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop"
+    },
+    {
+      "id": 6,
+      "title": "Women's Handbag",
+      "price": 1299,
+      "category": "Women",
+      "description": "Stylish leather handbag with multiple compartments. Perfect for daily use.",
+      "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400&h=400&fit=crop"
+    },
+    {
+      "id": 7,
+      "title": "Smart Watch Pro",
+      "price": 4999,
+      "category": "Electronics",
+      "description": "Feature-rich smartwatch with heart rate monitor, GPS, and water resistance.",
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop"
+    },
+    {
+      "id": 8,
+      "title": "Cotton T-Shirt Pack",
+      "price": 699,
+      "category": "Men",
+      "description": "Pack of 3 premium cotton t-shirts in assorted colors. Breathable and durable.",
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop"
+    },
+    {
+      "id": 9,
+      "title": "Laptop Backpack",
+      "price": 899,
+      "category": "Accessories",
+      "description": "Water-resistant laptop backpack with padded compartment and USB charging port.",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop"
+    },
+    {
+      "id": 10,
+      "title": "Bluetooth Speaker",
+      "price": 1499,
+      "category": "Electronics",
+      "description": "Portable Bluetooth speaker with 360-degree sound, waterproof design, and 12-hour battery.",
+      "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=400&fit=crop"
+    },
+    {
+      "id": 11,
+      "title": "Women's Sneakers",
+      "price": 1199,
+      "category": "Women",
+      "description": "Trendy women's sneakers with memory foam insole and lightweight construction.",
+      "image": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=400&h=400&fit=crop"
+    },
+    {
+      "id": 12,
+      "title": "Sunglasses Classic",
+      "price": 599,
+      "category": "Accessories",
+      "description": "UV400 protection sunglasses with polarized lenses and lightweight frame.",
+      "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=400&fit=crop"
+    }
+  ]
+}
