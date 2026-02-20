@@ -11,15 +11,18 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
             <button
                 onClick={() => onPageChange(currentPage - 1)}
                 disabled={currentPage === 1}
+                aria-label="Previous page"
                 className="btn-outline h-9 w-9 p-0 rounded-lg text-slate-400 hover:text-brand-600 disabled:opacity-30 transition-colors"
             >
-                <i className="fa-solid fa-chevron-left text-xs"></i>
+                <i className="fa-solid fa-chevron-left text-xs" aria-hidden="true"></i>
             </button>
 
             {pages.map((page) => (
                 <button
                     key={page}
                     onClick={() => onPageChange(page)}
+                    aria-label={`Page ${page}`}
+                    aria-current={page === currentPage ? "page" : undefined}
                     className={cn(
                         "h-9 w-9 rounded-lg text-xs font-bold transition-all",
                         page === currentPage
@@ -34,9 +37,10 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
             <button
                 onClick={() => onPageChange(currentPage + 1)}
                 disabled={currentPage === totalPages}
+                aria-label="Next page"
                 className="btn-outline h-9 w-9 p-0 rounded-lg text-slate-400 hover:text-brand-600 disabled:opacity-30 transition-colors"
             >
-                <i className="fa-solid fa-chevron-right text-xs"></i>
+                <i className="fa-solid fa-chevron-right text-xs" aria-hidden="true"></i>
             </button>
         </div>
     );

@@ -99,7 +99,7 @@ const ProductsPage = () => {
 
                     {loading ? (
                         <div className="flex min-h-[400px] flex-col items-center justify-center gap-4 text-slate-400">
-                            <i className="fa-solid fa-spinner fa-spin text-brand-600 text-4xl"></i>
+                            <i className="fa-solid fa-spinner fa-spin text-brand-600 text-4xl" aria-hidden="true"></i>
                             <p className="text-sm font-medium">Syncing catalog...</p>
                         </div>
                     ) : (

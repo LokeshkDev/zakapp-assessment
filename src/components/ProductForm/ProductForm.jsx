@@ -54,7 +54,7 @@ const ProductForm = ({ product, onSubmit, onCancel, isEditing, disabled }) => {
         <div className={cn("card overflow-hidden transition-all duration-300", disabled && "opacity-50 grayscale-[20%]")}>
             <div className="border-b border-slate-100 bg-slate-50/50 px-6 py-4">
                 <h3 className="flex items-center gap-2 text-sm font-bold text-slate-800">
-                    <i className={cn(isEditing ? "fa-solid fa-pen-to-square" : "fa-solid fa-plus-circle", "text-brand-600")}></i>
+                    <i className={cn(isEditing ? "fa-solid fa-pen-to-square" : "fa-solid fa-plus-circle", "text-brand-600")} aria-hidden="true"></i>
                     {isEditing ? (disabled ? 'Edit Product' : `Edit Product: ${product?.title}`) : 'Add New Product'}
                 </h3>
             </div>
@@ -62,8 +62,9 @@ const ProductForm = ({ product, onSubmit, onCancel, isEditing, disabled }) => {
             <form onSubmit={handleSubmit} className="space-y-4 p-6">
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                     <div className="sm:col-span-2">
-                        <label className="label">Product Title</label>
+                        <label className="label" htmlFor="product-title">Product Title</label>
                         <input
+                            id="product-title"
                             name="title"
                             value={form.title}
                             onChange={handleChange}
@@ -75,8 +76,9 @@ const ProductForm = ({ product, onSubmit, onCancel, isEditing, disabled }) => {
                     </div>
 
                     <div>
-                        <label className="label">Price (₹)</label>
+                        <label className="label" htmlFor="product-price">Price (₹)</label>
                         <input
+                            id="product-price"
                             type="number"
                             name="price"
                             value={form.price}
@@ -89,8 +91,9 @@ const ProductForm = ({ product, onSubmit, onCancel, isEditing, disabled }) => {
                     </div>
 
                     <div>
-                        <label className="label">Category</label>
+                        <label className="label" htmlFor="product-category">Category</label>
                         <select
+                            id="product-category"
                             name="category"
                             value={form.category}
                             onChange={handleChange}
@@ -102,12 +105,13 @@ const ProductForm = ({ product, onSubmit, onCancel, isEditing, disabled }) => {
                     </div>
 
                     <div className="sm:col-span-2">
-                        <label className="label">Image URL</label>
+                        <label className="label" htmlFor="product-image">Image URL</label>
                         <div className="relative">
                             <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-400">
-                                <i className="fa-solid fa-image text-sm"></i>
+                                <i className="fa-solid fa-image text-sm" aria-hidden="true"></i>
                             </div>
                             <input
+                                id="product-image"
                                 name="image"
                                 value={form.image}
                                 onChange={handleChange}
@@ -119,8 +123,9 @@ const ProductForm = ({ product, onSubmit, onCancel, isEditing, disabled }) => {
                     </div>
 
                     <div className="sm:col-span-2">
-                        <label className="label">Description</label>
+                        <label className="label" htmlFor="product-description">Description</label>
                         <textarea
+                            id="product-description"
                             name="description"
                             rows={3}
                             value={form.description}

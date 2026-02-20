@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <header className="sticky top-0 z-50 w-full border-b border-slate-200 bg-white/80 backdrop-blur-md">
             <div className="container mx-auto flex h-16 items-center justify-between px-4 lg:px-8">
-                <NavLink to="/" className="flex items-center gap-2 text-xl font-bold tracking-tight text-slate-900">
+                <NavLink to="/" className="flex items-center gap-2 text-xl font-bold tracking-tight text-slate-900" aria-label="Home">
                     <h1>React<span className="text-brand-600">STore</span></h1>
                 </NavLink>
 
@@ -21,7 +21,7 @@ const Navbar = () => {
                                 : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
                         )}
                     >
-                        <i className="fa-solid fa-boxes-stacked text-sm"></i>
+                        <i className="fa-solid fa-boxes-stacked text-sm" aria-hidden="true"></i>
                         <span className="hidden sm:inline">Products</span>
                     </NavLink>
 
@@ -34,7 +34,7 @@ const Navbar = () => {
                                 : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
                         )}
                     >
-                        <i className="fa-solid fa-table-columns text-sm"></i>
+                        <i className="fa-solid fa-table-columns text-sm" aria-hidden="true"></i>
                         <span className="hidden sm:inline">Admin</span>
                     </NavLink>
                 </nav>

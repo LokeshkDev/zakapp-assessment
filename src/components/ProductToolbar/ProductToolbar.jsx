@@ -21,30 +21,33 @@ const ProductToolbar = ({
 }) => {
     return (
         <div className="flex flex-col lg:flex-row items-center gap-4 w-full">
-            <div className="relative lg:flex-[4] w-full">
+            <div className="relative lg:w-[30%] w-full">
                 <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-400">
-                    <i className="fa-solid fa-magnifying-glass text-sm"></i>
+                    <i className="fa-solid fa-magnifying-glass text-sm" aria-hidden="true"></i>
                 </div>
                 <input
                     type="text"
                     className="input-field pl-11 h-11 border-slate-200 focus:border-brand-500 transition-all font-medium"
                     placeholder="Search products..."
+                    aria-label="Search products"
                     value={search}
                     onChange={(e) => onSearchChange(e.target.value)}
                 />
                 {search && (
                     <button
                         onClick={() => onSearchChange('')}
+                        aria-label="Clear search"
                         className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 transition-colors"
                     >
-                        <i className="fa-solid fa-xmark"></i>
+                        <i className="fa-solid fa-xmark" aria-hidden="true"></i>
                     </button>
                 )}
             </div>
 
-            <div className="relative lg:flex-[3] w-full">
+            <div className="relative lg:w-[20%] w-full">
                 <select
                     className="w-full h-11 pl-4 pr-10 rounded-lg border border-slate-200 bg-white text-sm font-semibold appearance-none cursor-pointer focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 transition-all"
+                    aria-label="Filter by category"
                     value={category}
                     onChange={(e) => onCategoryChange(e.target.value)}
                 >
@@ -54,12 +57,13 @@ const ProductToolbar = ({
                         </option>
                     ))}
                 </select>
-                <i className="fa-solid fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-xs"></i>
+                <i className="fa-solid fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-xs" aria-hidden="true"></i>
             </div>
 
-            <div className="relative lg:flex-[3] w-full">
+            <div className="relative lg:w-1/5 w-full">
                 <select
                     className="w-full h-11 pl-4 pr-10 rounded-lg border border-slate-200 bg-white text-sm font-semibold appearance-none cursor-pointer focus:border-brand-500 focus:ring-4 focus:ring-brand-500/10 transition-all"
+                    aria-label="Sort products"
                     value={sort}
                     onChange={(e) => onSortChange(e.target.value)}
                 >
@@ -69,7 +73,7 @@ const ProductToolbar = ({
                         </option>
                     ))}
                 </select>
-                <i className="fa-solid fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-xs"></i>
+                <i className="fa-solid fa-chevron-down absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none text-xs" aria-hidden="true"></i>
             </div>
         </div>
     );

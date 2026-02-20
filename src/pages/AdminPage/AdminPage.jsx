@@ -102,7 +102,7 @@ const AdminPage = () => {
                     <div className="card overflow-hidden h-full">
                         <div className="flex items-center justify-between border-b border-slate-100 bg-white px-6 py-5">
                             <h2 className="flex items-center gap-2 text-sm font-bold text-slate-800">
-                                <i className="fa-solid fa-layer-group text-brand-600"></i>
+                                <i className="fa-solid fa-layer-group text-brand-600" aria-hidden="true"></i>
                                 Product Inventory
                             </h2>
                         </div>
@@ -159,7 +159,7 @@ const AdminPage = () => {
                                                 </td>
                                                 <td className="px-6 py-4 font-black text-slate-900">
                                                     <div className="flex items-center">
-                                                        <i className="fa-solid fa-indian-rupee-sign text-xs mr-1"></i>
+                                                        <i className="fa-solid fa-indian-rupee-sign text-xs mr-1" aria-hidden="true"></i>
                                                         {p.price.toLocaleString('en-IN')}
                                                     </div>
                                                 </td>
@@ -168,16 +168,18 @@ const AdminPage = () => {
                                                         <button
                                                             onClick={() => { setEditingProduct(p); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                                                             className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 text-slate-400 transition-all hover:bg-white hover:text-brand-600 hover:border-brand-200 hover:shadow-sm"
+                                                            aria-label={`Edit ${p.title}`}
                                                             title="Edit Product"
                                                         >
-                                                            <i className="fa-solid fa-pen-to-square text-sm"></i>
+                                                            <i className="fa-solid fa-pen-to-square text-sm" aria-hidden="true"></i>
                                                         </button>
                                                         <button
                                                             onClick={() => setDeleteId(p.id)}
                                                             className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 text-slate-400 transition-all hover:bg-red-50 hover:text-red-600 hover:border-red-200"
+                                                            aria-label={`Remove ${p.title}`}
                                                             title="Remove Product"
                                                         >
-                                                            <i className="fa-solid fa-trash-can text-sm"></i>
+                                                            <i className="fa-solid fa-trash-can text-sm" aria-hidden="true"></i>
                                                         </button>
                                                     </div>
                                                 </td>

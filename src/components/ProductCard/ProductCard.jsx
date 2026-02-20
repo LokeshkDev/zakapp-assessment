@@ -35,14 +35,14 @@ const ProductCard = ({ product, onEdit, onDelete }) => {
                         onClick={() => onEdit(product)}
                         className="btn-primary flex-1 h-10 text-xs font-bold transition-all flex items-center justify-center gap-2"
                     >
-                        <i className="fa-solid fa-pen-to-square"></i>
+                        <i className="fa-solid fa-pen-to-square" aria-hidden="true"></i>
                         Edit
                     </button>
                     <button
                         onClick={() => onDelete(product.id)}
                         className="flex-1 h-10 border border-slate-200 font-bold text-brand-600 text-xs hover:bg-red-50 hover:text-red-600 transition-all hover:border-red-200 rounded-lg flex items-center justify-center gap-2"
                     >
-                        <i className="fa-solid fa-trash-can"></i>
+                        <i className="fa-solid fa-trash-can" aria-hidden="true"></i>
                         Delete
                     </button>
                 </div>
