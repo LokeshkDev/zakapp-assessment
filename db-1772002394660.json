@@ -2,11 +2,19 @@
   "products": [
     {
       "title": "Mens Casual Shirt",
-      "price": 400,
+      "price": 499,
       "category": "Men",
       "description": "Comfortable cotton casual shirt for everyday wear. Soft fabric with a modern slim fit design.",
       "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=400&h=400&fit=crop",
       "id": 1
+    },
+    {
+      "id": 2,
+      "title": "Elegant Women's Dress",
+      "price": 799,
+      "category": "Women",
+      "description": "Beautiful elegant dress perfect for parties and special occasions. Premium fabric with stylish design.",
+      "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&h=400&fit=crop"
     },
     {
       "id": 3,
@@ -87,14 +95,6 @@
       "category": "Accessories",
       "description": "UV400 protection sunglasses with polarized lenses and lightweight frame.",
       "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&h=400&fit=crop"
-    },
-    {
-      "title": "Pant",
-      "price": 499,
-      "category": "Men",
-      "description": "suits for all dress",
-      "image": "",
-      "id": 13
     }
   ]
 }
